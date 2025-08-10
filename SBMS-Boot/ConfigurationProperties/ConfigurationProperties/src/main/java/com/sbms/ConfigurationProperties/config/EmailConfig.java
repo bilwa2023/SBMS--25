@@ -1,0 +1,57 @@
+package com.sbms.ConfigurationProperties.config;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+@Component
+@ConfigurationProperties(prefix="email.prop")
+public class EmailConfig {
+	private int port;
+	private String user;
+	
+	private List<String> tokens;
+	
+	private Map<String,Integer> map=new HashMap<>();
+	
+	private EmailHost host;
+	
+	public EmailHost getHost() {
+		return host;
+	}
+	public void setHost(EmailHost host) {
+		this.host = host;
+	}
+	public Map<String, Integer> getMap() {
+		return map;
+	}
+	public void setMap(Map<String, Integer> map) {
+		this.map = map;
+	}
+	public int getPort() {
+		return port;
+	}
+	public void setPort(int port) {
+		this.port = port;
+	}
+	public List<String> getTokens() {
+		return tokens;
+	}
+	public void setTokens(List<String> tokens) {
+		this.tokens = tokens;
+	}
+	public String getUser() {
+		return user;
+	}
+	public void setUser(String user) {
+		this.user = user;
+	}
+	@Override
+	public String toString() {
+		return "EmailConfig [port=" + port + ", user=" + user + ", tokens=" + tokens + ", map=" + map + ", host=" + host
+				+ "]";
+	}
+	
+}

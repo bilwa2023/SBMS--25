@@ -1,0 +1,14 @@
+package com.sbms.dto;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+
+public class CourseService {
+	@Autowired
+	private CourseRepository repo;
+	
+	CourseService(){
+		repo.printData();
+	}
+	
+}

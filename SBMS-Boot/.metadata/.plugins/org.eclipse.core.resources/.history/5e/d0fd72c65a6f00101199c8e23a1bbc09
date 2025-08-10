@@ -1,0 +1,5 @@
+package com.sbms.ConfigurationProperties.config;
+
+public class EmailHost {
+
+}

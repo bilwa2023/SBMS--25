@@ -1,0 +1,33 @@
+package com.sbms.config;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
+
+@Component
+@ConfigurationProperties("config.email")
+public class EmailConfig {
+	private String host;
+	private int id;
+	
+	public String getHost() {
+		return host;
+	}
+
+	public void setHost(String host) {
+		this.host = host;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	@Override
+	public String toString() {
+		return "EmailConfig [host=" + host + ", id=" + id + "]";
+	}
+}

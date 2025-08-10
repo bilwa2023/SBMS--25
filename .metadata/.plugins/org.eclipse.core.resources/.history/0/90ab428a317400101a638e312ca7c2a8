@@ -1,0 +1,23 @@
+package com.sbms.config;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Component;
+
+import lombok.Data;
+
+@Component
+@Data
+@Profile("default")
+public class EmailConfig {
+	@Value("gmail")
+	private String host;
+	@Value("125")
+	private int id;
+	@Override
+	public String toString() {
+		return "EmailConfig [host=" + host + ", id=" + id + "]";
+	}
+	
+	
+}

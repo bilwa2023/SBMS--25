@@ -1,0 +1,5 @@
+package com.sbms.SpringBootRunnerForProperties.runner;
+
+public class EmailRunner {
+
+}

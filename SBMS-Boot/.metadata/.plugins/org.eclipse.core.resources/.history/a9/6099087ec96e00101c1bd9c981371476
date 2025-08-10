@@ -1,0 +1,11 @@
+package com.sbms.SpringBootRunnerForProperties.runner;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class EmailConfig {
+	private String host;
+	private int port;
+	private boolean active;
+	private String user;
+}

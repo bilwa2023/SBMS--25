@@ -1,0 +1,8 @@
+package com.sbms.SpringBootRunnerForProperties.runner;
+
+public class EmailConfig {
+	private String host;
+	private int port;
+	private boolean active;
+	private String user;
+}

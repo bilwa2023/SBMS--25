@@ -1,0 +1,12 @@
+spring.application.name=ConfigurationProperties
+email.prop.port=9696
+email.prop.user=bilwa@gmail.com
+
+email.prop.tokens[0]=salsa
+email.prop.tokens[1]=palasa
+email.prop.tokens[2]=khalsa
+
+email.prop.map.sunday=1
+email.prop.map.monday=2
+email.prop.map.tuesday=3
+email.prop.map.wednesday=4

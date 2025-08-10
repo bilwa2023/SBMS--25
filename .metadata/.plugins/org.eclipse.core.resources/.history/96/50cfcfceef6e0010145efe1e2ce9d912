@@ -1,0 +1,14 @@
+package com.sbms.service;
+
+import com.sbms.dao.IEmpDao;
+
+public class ServiceImpl implements IEmpService {
+	
+	private IEmpDao dao;
+	
+	@Override
+	public void checkLogic() {
+		dao.save();
+	}
+
+}

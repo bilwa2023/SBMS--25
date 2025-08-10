@@ -1,0 +1,11 @@
+package com.sbms.controller;
+
+import com.sbms.service.IService;
+
+public class EmpController {
+	private IService service;
+	
+	void getInfo() {
+		service.checkLogic();
+	}
+}

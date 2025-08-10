@@ -1,0 +1,9 @@
+spring.application.name=ConfigurationProperties
+email.prop.port=9696
+email.prop.user=bilwa@gmail.com
+
+email.prop.tokens=pyasa,sasa,jhalsa
+
+email.prop.tokens[3]=salsa
+email.prop.tokens[4]=palasa
+email.prop.tokens[5]=khalsa

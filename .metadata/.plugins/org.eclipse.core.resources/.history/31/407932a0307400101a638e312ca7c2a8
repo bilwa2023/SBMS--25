@@ -1,0 +1,14 @@
+package com.sbms.runner;
+
+import org.springframework.boot.CommandLineRunner;
+
+import com.sbms.config.EmailConfig;
+
+public class EmailConfigRunner implements CommandLineRunner {
+	private EmailConfig email;
+	@Override
+	public void run(String... args) throws Exception {
+		
+	}
+
+}

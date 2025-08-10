@@ -1,0 +1,13 @@
+package com.sbms.controller;
+
+import org.springframework.stereotype.Controller;
+
+import com.sbms.service.IEmpService;
+@Controller
+public class EmpController {
+	private IEmpService service;
+	
+	void getInfo() {
+		service.checkLogic();
+	}
+}

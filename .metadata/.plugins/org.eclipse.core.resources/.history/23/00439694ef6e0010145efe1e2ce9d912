@@ -1,0 +1,15 @@
+package com.sbms.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.sbms.dto.Employee;
+
+public class DaoEmpImpl implements IEmpDao {
+	@Autowired
+	private Employee emp;
+	@Override
+	public void save() {
+		emp.setId(0);
+	}
+
+}

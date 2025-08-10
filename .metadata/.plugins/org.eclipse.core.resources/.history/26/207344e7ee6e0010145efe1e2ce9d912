@@ -1,0 +1,11 @@
+package com.sbms.service;
+
+public class ServiceImpl implements IService {
+
+	@Override
+	public void checkLogic() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

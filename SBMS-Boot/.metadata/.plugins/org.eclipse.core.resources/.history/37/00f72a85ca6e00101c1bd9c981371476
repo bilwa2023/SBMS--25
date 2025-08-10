@@ -1,0 +1,19 @@
+package com.sbms.SpringBootRunnerForProperties.runner;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
+@Component
+@ConfigurationProperties(prefix="email.properties")
+public class EmailConfig {
+	private String host;
+	private int port;
+	private boolean active;
+	private String user;
+	@Override
+	public String toString() {
+		return "EmailConfig [host=" + host + ", port=" + port + ", active=" + active + ", user=" + user + "]";
+	}
+	
+	
+}

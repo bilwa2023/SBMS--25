@@ -1,0 +1,6 @@
+package com.sbms.config;
+
+
+public class EmailConfig {
+	
+}

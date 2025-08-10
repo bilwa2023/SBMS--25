@@ -1,0 +1,11 @@
+package com.sbms.service;
+
+public class ServiceImpl implements IEmpService {
+	private IEmpDao dao;
+	
+	@Override
+	public void checkLogic() {
+		
+	}
+
+}

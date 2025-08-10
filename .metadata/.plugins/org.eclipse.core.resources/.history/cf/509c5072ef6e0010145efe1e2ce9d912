@@ -1,0 +1,11 @@
+package com.sbms.dao;
+
+public class DaoEmpImpl implements IEmpDao {
+	@Autowired
+	private Employee emp;
+	@Override
+	public void save() {
+
+	}
+
+}
