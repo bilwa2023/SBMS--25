@@ -1,8 +1,0 @@
-package com.sbms.config;
-
-import org.springframework.context.annotation.ComponentScan;
-
-@ComponentScan(basePackages = "com.sbms.controller,com.sbms.dao,com.sbms.dto,com.sbms.service")
-public class ConfigClass {
-
-}
