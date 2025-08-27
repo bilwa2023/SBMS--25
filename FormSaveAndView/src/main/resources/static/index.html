@@ -14,7 +14,7 @@
 <body>
   <h2>User Registration Form</h2>
 
-  <form id="userForm">
+  <form  id="userForm">
     <input type="text" name="fullname" placeholder="Full Name" required><br>
     <input type="email" name="email" placeholder="Email" required><br>
     <input type="text" name="phoneno" placeholder="Phone Number" required><br>
@@ -56,20 +56,30 @@
         <p><b>Address:</b> ${formData.address}</p>
         <p><b>Gender:</b> ${formData.gender}</p>
         <p><b>Experience:</b> ${formData.experience} years</p>
-        <button id="confirm">Confirm & Save</button>
-      `;
+        <button id="confirm">Confirm & Save</button>`;
 
       // Handle Save on Confirm
-      document.getElementById('confirm').addEventListener('click', async () => {
-        let res = await fetch('/api/users/save', {
-          method: 'POST',
-          headers: {'Content-Type': 'application/json'},
-          body: JSON.stringify(formData)
-        });
-        let data = await res.json();
-        alert("Details saved! ID = " + data.id + ". You can now download PDF.");
-        window.location.href = `/api/users/download/${data.id}`;
-      });
+document.getElementById('confirm').addEventListener('click', async () => {
+  try {
+    let res = await fetch('http://localhost:8080/save', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    });
+
+    if (!res.ok) {
+      throw new Error("Failed to save! Status: " + res.status);
+    }
+
+    let data = await res.json();
+    alert("Details saved! ID = " + data.id + ". You can now download PDF.");
+    window.location.href = `http://localhost:8080/download/${data.id}`;
+  } catch (err) {
+    alert("Error: " + err.message);
+    console.error(err);
+  }
+});
+
     });
   </script>
 </body>
