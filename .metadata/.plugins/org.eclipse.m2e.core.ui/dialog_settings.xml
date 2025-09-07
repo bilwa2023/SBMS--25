@@ -43,19 +43,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.sbms"/>
-			<item value="com.kite"/>
-			<item value="com.biswal"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="SpringBootProfiles"/>
-			<item value="LooseCoupling"/>
-			<item value="LookupMethodInjection"/>
-			<item value="SingleTonScopeVsPrototypeScope"/>
-			<item value="ConfigClassMultipleMultipleBean"/>
-			<item value="SpringPropertiesEnvironment"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -75,6 +66,21 @@
 	</section>
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\bilwa\Desktop\NoteApp\noteBackend"/>
+			<item value="C:\Users\bilwa\Desktop\Notes-using-Spring-Boot-master\server\Notes"/>
+			<item value="C:\Users\bilwa\Desktop\Notes-using-Spring-Boot-master\server"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
